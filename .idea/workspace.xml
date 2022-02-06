@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2ace48-0ad7-4707-832a-7a509e78d5a9" name="Changes" comment="React Basic&#10;1. Hello World&#10;2. State&#10;3. setState&#10;4. Props" />
+    <list default="true" id="1a2ace48-0ad7-4707-832a-7a509e78d5a9" name="Changes" comment="Start to study React Native">
+      <change afterPath="$PROJECT_DIR$/react_native_01/src/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_native_01/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_native_01/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +61,7 @@
       <workItem from="1643563998269" duration="379000" />
       <workItem from="1643731977471" duration="2737000" />
       <workItem from="1644125653864" duration="630000" />
-      <workItem from="1644134815221" duration="7039000" />
+      <workItem from="1644134815221" duration="11173000" />
     </task>
     <task id="LOCAL-00001" summary="1일차 학습">
       <created>1644136998756</created>
@@ -73,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644151479806</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Start to study React Native">
+      <created>1644152025421</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644152025421</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +106,19 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="1일차 학습" />
     <MESSAGE value="React Basic&#10;1. Hello World&#10;2. State&#10;3. setState&#10;4. Props" />
-    <option name="LAST_COMMIT_MESSAGE" value="React Basic&#10;1. Hello World&#10;2. State&#10;3. setState&#10;4. Props" />
+    <MESSAGE value="Start to study React Native" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start to study React Native" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/react_native_01/src/header.js</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

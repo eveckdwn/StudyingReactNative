@@ -6,109 +6,75 @@
  * @flow
  */
 
-import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+// react에서 Component Class를 import
+import React, {Component} from 'react';
+import {View, Text, StyleSheet} from 'react-native';
+import Header from './src/header';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+// App Class를 정의할 때, Component Class를 상속
+class App extends Component {
+  // 화면을 렌더링하는 함수가 있고, 그 안에 return되는 것들이 화면을 구성
 
-const App: () => React$Node = () => {
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
+  state = {
+    appName: 'My First App'
+  }
+  render() {
+    return (
+        /*<View style={styles.mainView}>
+          <View style={styles.subView}>
+            <Text style={styles.mainText}>Hello World</Text>
           </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
-  );
-};
+          <View style={styles.subView}>
+            <Text>Hello World</Text>
+          </View>
+          <View style={styles.anotherSubView}>
+            <Text style={styles.mainText}>Hello World</Text>
+          </View>
+        </View>*/
+        /*<View style={styles.mainView}>
+          <Header name={this.state.appName}/>
+        </View>*/
+        <View style={styles.mainView}>
+          <Text
+              style={styles.mainText}
+              onPress={()=>alert('text touch event')}
+          >Hello World</Text>
+        </View>
+    )
+  }
+}
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  mainView: {
+    flex: 1,
+    backgroundColor: 'white',
+    paddingTop: 50,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
-  engine: {
-    position: 'absolute',
-    right: 0,
+
+  subView: {
+    flex: 1,
+    backgroundColor: 'yellow',
+    marginBottom: 10,
+    width: '50%'
   },
-  body: {
-    backgroundColor: Colors.white,
+
+  anotherSubView: {
+    flex: 2,
+    backgroundColor: 'yellow',
+    marginBottom: 10,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
+
+  mainText: {
+    fontSize: 50,
+    fontWeight: 'bold',
+    color: 'red',
+    padding: 20
+  }
+})
 
 export default App;
