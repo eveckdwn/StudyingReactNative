@@ -4,15 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2ace48-0ad7-4707-832a-7a509e78d5a9" name="Changes" comment="Start to study React Native">
-      <change afterPath="$PROJECT_DIR$/react_native_01/src/header.js" afterDir="false" />
+    <list default="true" id="1a2ace48-0ad7-4707-832a-7a509e78d5a9" name="Changes" comment="React Native&#10;1. Intro&#10;2. View, Text&#10;3. Style&#10;4. TouchEvent">
+      <change afterPath="$PROJECT_DIR$/react_native_01/src/generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_native_01/src/input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_native_01/src/numList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react_native_01/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_native_01/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_native_01/src/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_native_01/src/header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,6 +72,7 @@
       <workItem from="1643731977471" duration="2737000" />
       <workItem from="1644125653864" duration="630000" />
       <workItem from="1644134815221" duration="11173000" />
+      <workItem from="1644720823342" duration="8528000" />
     </task>
     <task id="LOCAL-00001" summary="1일차 학습">
       <created>1644136998756</created>
@@ -108,17 +119,5 @@
     <MESSAGE value="React Basic&#10;1. Hello World&#10;2. State&#10;3. setState&#10;4. Props" />
     <MESSAGE value="Start to study React Native" />
     <option name="LAST_COMMIT_MESSAGE" value="Start to study React Native" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/react_native_01/src/header.js</url>
-          <line>31</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
