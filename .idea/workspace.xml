@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2ace48-0ad7-4707-832a-7a509e78d5a9" name="Changes" comment="React Native&#10;1. Intro&#10;2. View, Text&#10;3. Style&#10;4. TouchEvent">
-      <change afterPath="$PROJECT_DIR$/react_native_01/src/generator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react_native_01/src/input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react_native_01/src/numList.js" afterDir="false" />
+    <list default="true" id="1a2ace48-0ad7-4707-832a-7a509e78d5a9" name="Changes" comment="React Native&#10;1. Button&#10;2. TouchEvent 심화&#10;3. scrollView&#10;4. TextInput">
+      <change afterPath="$PROJECT_DIR$/react_native_01/src/picker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react_native_01/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_native_01/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_native_01/src/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_native_01/src/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_native_01/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react_native_01/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_native_01/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/react_native_01/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,9 @@
       <workItem from="1643731977471" duration="2737000" />
       <workItem from="1644125653864" duration="630000" />
       <workItem from="1644134815221" duration="11173000" />
-      <workItem from="1644720823342" duration="8528000" />
+      <workItem from="1644720823342" duration="8605000" />
+      <workItem from="1645232128767" duration="8000" />
+      <workItem from="1645365543639" duration="2818000" />
     </task>
     <task id="LOCAL-00001" summary="1일차 학습">
       <created>1644136998756</created>
@@ -95,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644152025421</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="React Native&#10;1. Button&#10;2. TouchEvent 심화&#10;3. scrollView&#10;4. TextInput">
+      <created>1644770584208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644770584208</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +126,7 @@
     <MESSAGE value="1일차 학습" />
     <MESSAGE value="React Basic&#10;1. Hello World&#10;2. State&#10;3. setState&#10;4. Props" />
     <MESSAGE value="Start to study React Native" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start to study React Native" />
+    <MESSAGE value="React Native&#10;1. Button&#10;2. TouchEvent 심화&#10;3. scrollView&#10;4. TextInput" />
+    <option name="LAST_COMMIT_MESSAGE" value="React Native&#10;1. Button&#10;2. TouchEvent 심화&#10;3. scrollView&#10;4. TextInput" />
   </component>
 </project>

@@ -7,12 +7,13 @@
  */
 
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
-import Input from './src/input';
+import {View, Text, StyleSheet, Button, TextInput, ScrollView} from 'react-native';
+import Picker from "./src/picker";
 
 class App extends Component {
   state = {
-    myTextInput: ''
+    myTextInput: '',
+    alphabet: ['a', 'b', 'c', 'e']
   }
 
   onChangeInput = (event) => {
@@ -22,17 +23,132 @@ class App extends Component {
   }
 
   onAddTextInput = () => {
+    this.setState(preState => {
+      return {
+        myTextInput: '',
+        alphabet: [...preState.alphabet, preState.myTextInput]
+      }
+    })
+  }
 
+  render() {
+    return (
+        <View style={styles.mainView}>
+          <Picker/>
+          <TextInput
+              value={this.state.myTextInput}
+              style={styles.input}
+              onChangeText={this.onChangeInput}
+              multiline={true}
+              maxLength={100}
+              autoCapitalize={'none'}
+
+          />
+          <Button
+              title="Add Text Input"
+              onPress={this.onAddTextInput}
+          />
+          <ScrollView style={ {width: '100%'} }>
+            {
+              this.state.alphabet.map( (item, idx) => (
+                  <Text
+                      style={styles.mainText}
+                      key={idx}
+                  >
+                    {item}
+                  </Text>
+              ) )
+            }
+          </ScrollView>
+        </View>
+    )
+  }
+}
+
+const styles = StyleSheet.create({
+  mainView: {
+    flex: 1,
+    backgroundColor: 'white',
+    alignItems: 'center',
+    // justifyContent: 'center'
+  },
+
+  mainText: {
+    fontSize: 20,
+    fontWeight: 'normal',
+    color: 'red',
+    backgroundColor: 'pink',
+    margin: 20,
+    padding: 20
+  },
+
+  input: {
+    width: '100%',
+    backgroundColor: '#cecece',
+    marginTop: 20,
+    fontSize: 25,
+    padding: 10
+  }
+})
+
+export default App;
+
+/**
+ * @description Button, ScrollView, TextInput 심화
+ */
+/*
+import React, {Component} from 'react';
+import {View, Text, StyleSheet, Button, TextInput, ScrollView} from 'react-native';
+
+class App extends Component {
+  state = {
+    myTextInput: '',
+    alphabet: ['a', 'b', 'c', 'e']
+  }
+
+  onChangeInput = (event) => {
+    this.setState({
+      myTextInput: event
+    })
+  }
+
+  onAddTextInput = () => {
+    this.setState(preState => {
+      return {
+        myTextInput: '',
+        alphabet: [...preState.alphabet, preState.myTextInput]
+      }
+    })
   }
 
   render() {
     return (
       <View style={styles.mainView}>
-        <Input/>
+        <TextInput
+            value={this.state.myTextInput}
+            style={styles.input}
+            onChangeText={this.onChangeInput}
+            multiline={true}
+            maxLength={100}
+            autoCapitalize={'none'}
+
+        />
         <Button
           title="Add Text Input"
           onPress={this.onAddTextInput}
         />
+        <ScrollView style={ {width: '100%'} }>
+          {
+            this.state.alphabet.map( (item, idx) => (
+              <Text
+                  style={styles.mainText}
+                  key={idx}
+              >
+                {item}
+              </Text>
+            ) )
+          }
+        </ScrollView>
       </View>
     )
   }
@@ -47,14 +163,25 @@ const styles = StyleSheet.create({
   },
 
   mainText: {
-    fontSize: 50,
-    fontWeight: 'bold',
+    fontSize: 20,
+    fontWeight: 'normal',
     color: 'red',
+    backgroundColor: 'pink',
+    margin: 20,
     padding: 20
+  },
+
+  input: {
+    width: '100%',
+    backgroundColor: '#cecece',
+    marginTop: 20,
+    fontSize: 25,
+    padding: 10
   }
 })
 
 export default App;
+*/
 
 /**
  * @description TextInput
